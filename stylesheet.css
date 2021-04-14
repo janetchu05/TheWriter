@@ -1,0 +1,138 @@
+*{
+    margin: 0; padding:0;
+}
+
+@font-face {
+    font-family: 'DOSMyungjo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/DOSMyungjo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+#middle_main, #library_file{
+    background-color:#068a8a;
+    width: 100%; height: 95%;
+}
+.mainLeft{
+    background-color:#068a8a;
+    width:7%; height: 95%;
+    float:left;
+    font-family:'DOSMyungjo'; font-size:17px; color:black;
+    text-align: center;
+}
+.mainRight{
+    background-color:#068a8a;
+    width: 93%; height:95%;
+    float:left;
+}
+.bob{
+    position:absolute;
+    right:0px;
+    bottom:40px;
+    height: 300px;
+}
+.filebox{
+    width: 510px; height: 300px;
+    background-color:whitesmoke;
+    position:absolute;
+    right:35%; bottom:35%
+}
+.filename{
+    width: 100%; height: 25px;
+    border: solid 3px lightgrey;
+    background-color:blue;
+    color: whitesmoke; font-size: 17px;
+    font-family:'DOSMyungjo';
+}
+.icon{
+    height: 24px;
+    bottom:1px;
+}
+.fileview{
+    width:100%; height: 265px;
+    border: solid 3px lightgrey;
+    background-color:whitesmoke;
+    text-align:center;
+    font-family:'DOSMyungjo'; font-size : 19px;
+    line-height:50px;
+}
+.bottom{
+    background-color:rgb(141, 139, 139);
+    width: 99%; height:4%;
+    border: solid 3px lightgrey;
+}
+
+.library_file{
+    width:100%; height:95%;
+    background-color:#068a8a;
+    
+}
+
+.library_filename{
+    height: 25px; width: 80%;
+    border: solid 3px lightgrey;
+    background-color:blue;
+    color: whitesmoke; font-size: 17px;
+    font-family:'DOSMyungjo';
+    margin-left:10%;
+
+}
+.filemanage{
+    width : 80%; height:3%;
+    border : solid 3px lightgrey;
+    background-color:gray;
+    font-family:'DOSMyungjo'; font-size: 18px;
+    margin-left: 10%;
+}
+
+.library_left{
+    background-color:whitesmoke;
+    width:11.6%; height: 88%;
+    float:left;
+    border: solid 3px lightgray;
+    font-family:'DOSMyungjo'; font-size:20px; color:black;
+    text-align : center;
+    line-height: 50px;
+    margin-left: 10%;
+}
+.library_right{
+    background-color:whitesmoke;
+    width: 68.05%; height:88%;
+    border: solid 3px lightgray;
+    float:left;
+}
+
+
+.lines{
+    font-family:'DOSMyungjo'; font-size: 20px; color: black;
+    line-height:30px;
+    padding-top:2%;
+}
+
+
+textarea {
+	resize: none !important;
+	overflow: auto !important;
+	outline: none;
+	box-shadow: none !important;
+    font-family:'DOSMyungjo'; font-size: 20px; color: black;
+}
+
+textarea.notes {
+	width: 99%;
+	height: 40em;
+	line-height: 31px;
+	background-image: -webkit-linear-gradient(left, white 0, transparent 0), -webkit-linear-gradient(right, white 0, transparent 0), -webkit-linear-gradient(white 30px, #ccc 30px, #ccc 31px, white 31px);
+	background-repeat: repeat-y;
+	background-size: 100% 100%, 100% 100%, 100% 31px;
+	background-attachment: local;
+    margin:2px;
+    font-family:'DOSMyungjo'; font-size: 20px; color: black;
+}
+
+.btn_reset, .btn_submit{
+    margin-top:1%;
+    font-family:'DOSMyungjo'; font-size: 20px; color: black;
+    
+}

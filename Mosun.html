@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <meta charset = "utf-8"/>
+        <title>The Writer</title>
+        <link rel = "stylesheet" type="text/css" href="stylesheet.css">
+        <script type = "text/javascript">
+        function clearForm(){
+            var el = document.getElementsByClassName('notes_text');
+
+            for(var i = 0; i <el.length;i++){
+                el[i].value = '';
+            }
+        }
+        </script>
+    
+    </head>
+    <body>
+        <p class="lines">사람과 사람 사이의 관계에서 솔직함만이 최선이라고 생각하는 것처럼 어리석은 일은 없다. 
+            솔직함은 때로 흉기로 변해 자신에게로 되돌아오는 부메랑일 수도 있는 것이었다.
+        </p>
+
+        
+        <textarea name="notes" rows="20" cols="95" wrap=hard class="notes_text"></textarea>
+        <p></p>
+        <input name="reset" type="button" value="다시쓰기" class="btn_reset" onclick="clearForm()">
+        <input name="Submit" type="submit"  value="저장하기" class="btn_submit" onclick=" 
+        alert('저장되었습니다.');
+        ">
+        
+    </body>
+</html>

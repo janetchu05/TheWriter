@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <meta charset = "utf-8"/>
+        <title>The Writer</title>
+        <link rel = "stylesheet" type="text/css" href="stylesheet.css">
+        <script type = "text/javascript">
+            function clearForm(){
+                var el = document.getElementsByClassName('notes_text');
+    
+                for(var i = 0; i <el.length;i++){
+                    el[i].value = '';
+                }
+            }
+            </script>
+    </head>
+    <body>
+        <p class="lines">
+            나는 엄마가 남긴 말들을 복기하며 힌트를 얻고자 했다. 가장 많이 했던 말이 떠올랐다. '정상적'으로 살 것.(...)
+            <br>"정상적인 게 어떤 거니?"
+            <br>"남들과 비슷한 것."
+            <br>한동안 정적. 이번엔 좀 길게 써 봤다.
+            <br>남들과 비슷하다는 건 뭘까. 사람은 다 다른데 누굴 기준으로 잡지?
+        </p>
+        <textarea name="notes" rows="17" cols="95" wrap = hard class="notes_text"></textarea>
+        <input name="reset" type="reset" value="다시쓰기" class="btn_reset" onclick="clearForm()"/>
+        <input name="Submit" type="submit"  value="저장하기" class="btn_submit"  onclick=" 
+        alert('저장되었습니다.')" />
+    </body>
+</html>

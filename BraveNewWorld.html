@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <meta charset = "utf-8"/>
+        <title>The Writer</title>
+        <link rel = "stylesheet" type="text/css" href="stylesheet.css">
+        <script type = "text/javascript">
+            function clearForm(){
+                var el = document.getElementsByClassName('notes_text');
+    
+                for(var i = 0; i <el.length;i++){
+                    el[i].value = '';
+                }
+            }
+            </script>
+    </head>
+    <body>
+        <p class="lines">
+            "하지만 버나드, 당신은 지극히 끔찍한 얘기들만 하는군요."<br>
+            "당신은 자유롭고 싶지 않나요, 레니나?"<br>
+            "난 당신 얘기를 이해하지 못하겠어요. 나는 자유로워요.
+             지극히 즐거운 시간을 보낼 자유를 누리며 살죠. 
+             지금은 누구나 다 행복해요."
+        </p>
+        <textarea name="notes" rows="19" cols="95" wrap=hard class="notes_text"></textarea>
+        <input name="reset" type="reset" value="다시쓰기" class="btn_reset" onclick="clearForm()">
+        <input name="Submit" type="submit"  value="저장하기" class="btn_submit"  onclick=" 
+        alert('저장되었습니다.')" >
+    </body>
+</html>

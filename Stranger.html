@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <meta charset = "utf-8"/>
+        <title>The Writer</title>
+        <link rel = "stylesheet" type="text/css" href="stylesheet.css">
+        <script type = "text/javascript">
+            function clearForm(){
+                var el = document.getElementsByClassName('notes_text');
+    
+                for(var i = 0; i <el.length;i++){
+                    el[i].value = '';
+                }
+            }
+            </script>
+    </head>
+    <body>
+        <p class="lines">저녁에 마리가 와서 자기와 결혼할 생각이 있느냐고 물었다.
+            나는 아무래도 상관은 없지만 그녀가 원한다면 결혼해도 괜찮다고 말햇다.
+        </p>
+        <textarea name="notes" rows="20" cols="95" wrap= hard class="notes_text"></textarea>
+        <input name="reset" type="reset" value="다시쓰기" class="btn_reset" onclick="clearForm()"/>
+        <input name="Submit" type="submit"  value="저장하기" class="btn_submit"  onclick=" 
+        alert('저장되었습니다.')"/>
+    </body>
+</html>
